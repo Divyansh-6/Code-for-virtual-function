@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+Class A
+{
+  public:
+  virtual void display()
+  {
+    cout<<"Base Class";
+  }
+};
+Class B: public A
+{
+  public:
+  void display()
+  {
+    cout<<"Derived Class";
+  }
+};
+int main()
+{
+  A*b ptr;
+  B aa;
+  b ptr= &aa;
+  bptr=display();
+  return 0;
+}
